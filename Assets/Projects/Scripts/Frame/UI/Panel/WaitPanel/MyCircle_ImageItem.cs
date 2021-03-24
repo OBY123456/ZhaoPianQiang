@@ -49,20 +49,12 @@ public class MyCircle_ImageItem : MyUIBase {
         isInCircle = false;
     }
 
-    //public void ReSetImage(Texture2D texture2D)
-    //{
-
-    //    rawImage.texture = texture2D;
-
-    //}
-
 
     private void Start()
     {
         rawImage = this.GetComponent<RawImage>();
         selfButton = transform.GetComponent<Button>();
 
-        //bigImagePrefabs = Resources.Load<GameObject>("BigImage");
         bigShowParent = GameObject.Find("BigImagePanel").transform;
         selfButton.onClick.AddListener(() =>
         {

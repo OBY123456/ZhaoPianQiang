@@ -126,16 +126,16 @@ public class MyCircle_GameRoot : MonoBehaviour {
         fileStream.Seek(0, SeekOrigin.Begin);
         byte[] bytes = new byte[fileStream.Length];
         fileStream.Read(bytes, 0, (int)fileStream.Length);
-        //System.Drawing.Image image = System.Drawing.Image.FromStream(fileStream);
+
         fileStream.Close();
         fileStream.Dispose();
         fileStream = null;
 
-        int width = 202;
+        int width = 240;
         int height = 135;
         Texture2D tmp = new Texture2D(width, height);
         tmp.LoadImage(bytes);
-        // Sprite sprite = Sprite.Create(tmp, new Rect(0, 0, tmp.width, tmp.height), new Vector2(0.5f, 0.5f));  //0.5  像素点
+
         tmp.name = texName;
         showImageList.Add(tmp);
         bytes = null;
