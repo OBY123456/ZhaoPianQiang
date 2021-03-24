@@ -82,7 +82,7 @@ public class UdpState : BaseState
     public override void Enter()
     {
         base.Enter();
-        CurrentTask.ChangeTask(new UdpTask(this));
+        CurrentTask.ChangeTask(new WaitTask(this));
         //EventManager.AddUpdateListener(UpdateEventEnumType.Update,"OnUpdate",Onupdate);
     }
 

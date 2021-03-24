@@ -26,7 +26,7 @@ public class MyCircle_ImageItem : MyUIBase {
 
     Vector3 targetScale = Vector3.one;
 
-    int CircleR = 300;
+    int CircleR = 800;
 
     Button selfButton;
 
@@ -70,7 +70,6 @@ public class MyCircle_ImageItem : MyUIBase {
             newBigImage.transform.localPosition = this.transform.localPosition;
 
             newBigImage.GetComponent<RawImage>().texture = this.GetComponent<RawImage>().texture;
-            Debug.Log("111");
         });
     }
 
@@ -90,7 +89,7 @@ public class MyCircle_ImageItem : MyUIBase {
             currentPos += Vector3.left * 2f;
             targetPos += Vector3.left * 2f;
 
-            if (currentPos.x < -1300)
+            if (currentPos.x < -3860)
             {
                 OnExit();
             }

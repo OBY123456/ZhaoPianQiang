@@ -7,7 +7,7 @@ using MTFrame.MTEvent;
 using System;
 using System.IO;
 
-public class UdpPanel : BasePanel
+public class WaitPanel : BasePanel
 {
 
     protected override void Awake()

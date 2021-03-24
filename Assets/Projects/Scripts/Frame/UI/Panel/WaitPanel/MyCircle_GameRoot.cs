@@ -31,7 +31,7 @@ public class MyCircle_GameRoot : MonoBehaviour {
     bool isstart = true;
 
     //行
-    int row = 6;
+    int row = 10;
     //列
     int column = 7;
 
@@ -40,7 +40,7 @@ public class MyCircle_GameRoot : MonoBehaviour {
     float YOffset = 5;
 
    // [Header("起始位置")]
-     Vector3 startPos=new Vector3 (0,80,0);
+     Vector3 startPos=new Vector3 (4600,130,0);
 
     Vector3 originalPos=Vector3.zero;
 
@@ -151,12 +151,13 @@ public class MyCircle_GameRoot : MonoBehaviour {
     {
         if (showImageList.Count > 0)
         {
+            imageListIndex = UnityEngine.Random.Range(0, 9);
             Texture2D newSprite = showImageList[imageListIndex];
-            imageListIndex++;
-            if (imageListIndex >= showImageList.Count)
-            {
-                imageListIndex = 0;
-            }
+            //imageListIndex++;
+            //if (imageListIndex >= showImageList.Count)
+            //{
+            //    imageListIndex = 0;
+            //}
             return newSprite;
         }
         else

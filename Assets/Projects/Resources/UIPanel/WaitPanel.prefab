@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 4310407869719099143}
   - component: {fileID: 2549934155698486783}
   m_Layer: 5
-  m_Name: UdpPanel
+  m_Name: WaitPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -190,8 +190,6 @@ MonoBehaviour:
   openTweenTime: 0.5
   hideTweenTime: 0.5
   IsOpen: 1
-  RawImagePrefab: {fileID: 3823921815273675742, guid: 98bbf35af18cb2e4e9a99bb2b27be2aa,
-    type: 3}
 --- !u!114 &801361962331362554
 MonoBehaviour:
   m_ObjectHideFlags: 0
