@@ -38,7 +38,7 @@ public class MyCircle_ImageItem : MyUIBase {
         isEnable = true;
         transform.localPosition= currentPos;
         targetPos = currentPos;
-        Texture2D newSprite = MyCircle_GameRoot.instance.GetImage();
+        Texture2D newSprite = WaitPanel.instance.GetImage();
         if (newSprite!=null)
         {
             transform.GetComponent<RawImage>().texture = newSprite;

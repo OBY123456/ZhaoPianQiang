@@ -65,7 +65,7 @@ public class BigImage : MonoBehaviour {
         }
         for (int i = 0; i < moveImageList.Count; i++)
         {
-            if (MessageEvent.IsInCircle(transform.localPosition,800, moveImageList[i].currentPos))
+            if (WaitPanel.IsInCircle(transform.localPosition,800, moveImageList[i].currentPos))
             {
                 if (!moveImageList[i].bigImageList.Contains(bigImage))
                 {

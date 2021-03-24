@@ -33,14 +33,10 @@ namespace MyCirle
         }
 
 
-        public static bool IsInCircle(Vector2 CirclePoint, float r, Vector2 point)
-        {
-            //图片的点 （point.x - CirclePoint.x，point.y - CirclePoint.y） a=  r/2  b=r
-
-            return Mathf.Sqrt((point.x - CirclePoint.x) * (point.x - CirclePoint.x) + (point.y - CirclePoint.y) * (point.y - CirclePoint.y)) <= r;
-            //  bool isinCircle = (point.x - CirclePoint.x) * (point.x - CirclePoint.x) / (r * r) + (point.y - CirclePoint.y) * (point.y - CirclePoint.y) / (r * r / 2.25) <= 1;
-            // return isinCircle;
-        }
+        //public static bool IsInCircle(Vector2 CirclePoint, float r, Vector2 point)
+        //{
+        //    return Mathf.Sqrt((point.x - CirclePoint.x) * (point.x - CirclePoint.x) + (point.y - CirclePoint.y) * (point.y - CirclePoint.y)) <= r;
+        //}
 
         public GameObject GetNewMoveImage()
         {
